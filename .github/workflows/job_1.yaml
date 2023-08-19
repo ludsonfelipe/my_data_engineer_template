@@ -8,8 +8,14 @@ on:
       - main
 
 jobs:
-  hello:
+  job1:
     runs-on: ubuntu-latest
     steps:
       - name: job1
-        run: echo "Job 1"
+        run: echo "hello world" > text.txt
+    
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: job2
+        run: echo "xd"
