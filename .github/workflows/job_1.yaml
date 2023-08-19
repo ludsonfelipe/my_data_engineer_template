@@ -1,0 +1,15 @@
+name: my_first_job
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: job1
+        run: echo "Job 1"
