@@ -1,4 +1,5 @@
 name: my_workflow
+
 on:
   push:
     branches:
@@ -12,13 +13,13 @@ jobs:
   job_1:
     runs-on: ubuntu-latest
     steps:
-      - name: test
+        name: test
         run: echo "testing"
         shell: bash
 
   job_2:
     runs-on: ubuntu-latest
     steps:
-      - name: test2
+        name: test2
         run: echo "testin 2"
         shell: bash
